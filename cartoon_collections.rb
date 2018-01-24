@@ -11,8 +11,14 @@ def summon_captain_planet(array)
   uppercase
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(array)
+  array.find do |call|
+    if call.length > 4
+      return true
+    else
+      false
+    end
+  end 
 end
 
 def find_the_cheese# code an argument here
